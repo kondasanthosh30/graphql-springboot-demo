@@ -1,0 +1,14 @@
+type Book {
+    id: ID!
+    bookName: String
+    zoner: String
+}
+
+type Query {
+    findAll: [Book]
+    findOne (id: ID): Book
+}
+
+type Mutation {
+    create(bookName: String,zoner:String): Book
+}
